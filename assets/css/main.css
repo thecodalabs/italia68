@@ -1,22 +1,16 @@
-/* ==========================================================================
-   Base & Reset
-   ========================================================================== */
 :root {
-  /* Color Palette */
-  --bg-color: #f5f5f7; /* Apple light gray background */
+  --bg-color: #f5f5f7;
   --card-bg: #ffffff;
-  --text-main: #1d1d1f; /* Rich black for headings */
-  --text-muted: #86868b; /* Soft gray for meta/dates */
-  --text-body: #424245; /* Dark gray for reading comfort */
-  --accent-color: #0066cc; /* Link/Category blue */
+  --text-main: #1d1d1f;
+  --text-muted: #86868b;
+  --text-body: #424245;
+  --accent-color: #0066cc;
   --accent-hover: #004499;
-  --heart-color: #ff3b30; /* Red for likes */
+  --heart-color: #ff3b30;
 
-  /* Typography */
   --font-heading: "Varela Round", sans-serif;
   --font-body: "Google Sans", system-ui, sans-serif;
 
-  /* Layout */
   --border-radius: 24px;
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -36,9 +30,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ==========================================================================
-   Typography & Header
-   ========================================================================== */
 h1,
 h2,
 h3,
@@ -72,20 +63,13 @@ mark {
   color: var(--text-main);
 }
 
-/* ==========================================================================
-   Grid Layout
-   ========================================================================== */
 .grid-container {
   display: grid;
-  /* Auto-fit creates a responsive grid without media queries */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 32px;
   align-items: start;
 }
 
-/* ==========================================================================
-   Card Styling (.item)
-   ========================================================================== */
 .item {
   background: var(--card-bg);
   border-radius: var(--border-radius);
@@ -94,7 +78,7 @@ mark {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  height: 100%; /* Keeps cards uniform in height */
+  height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
@@ -103,7 +87,6 @@ mark {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Image */
 .item img {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -111,7 +94,6 @@ mark {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Content wrapper (targeting everything after the image) */
 .item h3,
 .item p,
 .item .meta-data,
@@ -119,7 +101,6 @@ mark {
   padding: 0 24px;
 }
 
-/* Meta Data row */
 .meta-data {
   display: flex;
   align-items: center;
@@ -131,7 +112,6 @@ mark {
   color: var(--text-muted);
 }
 
-/* Note: In production, change id="like" to class="like-btn" in your HTML since IDs should be unique */
 .meta-data a {
   text-decoration: none;
   color: var(--text-muted);
@@ -157,18 +137,16 @@ mark {
   font-weight: 600;
 }
 
-/* Card Headline */
 .item h3 {
   font-size: 1.35rem;
   line-height: 1.3;
   margin-bottom: 12px;
 }
 
-/* Card Paragraphs */
 .item p {
   font-size: 0.95rem;
   margin-bottom: 16px;
-  flex-grow: 1; /* Pushes the "Read More" link to the bottom */
+  flex-grow: 1;
 }
 
 .item p a {
@@ -181,34 +159,32 @@ mark {
   text-decoration: underline;
 }
 
-/* Read More Link */
 .read-more {
-  display: inline-flex;
-  align-items: center;
-  margin-bottom: 24px;
-  margin-top: auto; /* Aligns to bottom */
-  font-weight: 600;
+  outline: none;
   color: var(--accent-color);
-  text-decoration: none;
-  transition: var(--transition);
-  font-size: 0.95rem;
+  font-weight: 500;
+  width: fit-content;
+  margin: auto 24px 24px;
+  height: 38px;
+  border-radius: 30px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .read-more i {
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .read-more:hover {
-  color: var(--accent-hover);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .read-more:hover i {
-  transform: translateX(4px); /* Small arrow slide effect */
+  transform: translateX(4px);
 }
 
-/* ==========================================================================
-   Responsive Adjustments
-   ========================================================================== */
 @media (max-width: 768px) {
   #home > h1 {
     font-size: 2.5rem;
@@ -223,22 +199,18 @@ mark {
   }
 }
 
-/* ==========================================================================
-   Apple App Mobile Experience
-   ========================================================================== */
-
 @media (max-width: 600px) {
   body {
-    background-color: #ffffff; /* Apps often use white backgrounds on mobile */
-    padding-bottom: 80px; /* Space for a potential bottom nav bar */
+    background-color: #ffffff;
+    padding-bottom: 80px;
   }
 
   main {
-    padding: 20px 16px; /* Standard iOS horizontal padding */
+    padding: 20px 16px;
   }
 
   #home > h1 {
-    text-align: left; /* App titles are usually left-aligned and large */
+    text-align: left;
     font-size: 34px;
     letter-spacing: -0.5px;
     margin-bottom: 24px;
@@ -248,29 +220,27 @@ mark {
   .grid-container {
     display: flex;
     flex-direction: column;
-    gap: 28px; /* Distinct spacing between app-style cards */
+    gap: 28px;
   }
 
   .item {
     border: none;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Deeper, "floaty" shadows */
-    border-radius: 32px; /* Apple's signature deep rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
     background: #fff;
     transition: transform 0.2s ease;
   }
 
-  /* Active state mimics a "press" on an app card */
   .item:active {
     transform: scale(0.96);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .item img {
-    height: 260px; /* Taller images like the App Store 'Today' cards */
+    height: 260px;
     border-bottom: none;
   }
 
-  /* Content inside the card */
   .item h3 {
     font-size: 24px;
     margin-top: 4px;
@@ -280,20 +250,18 @@ mark {
 
   .item p {
     font-size: 16px;
-    color: #636366; /* iOS secondary text color */
+    color: #636366;
     padding: 0 20px;
     margin-bottom: 20px;
-    /* Limit text to 3 lines for a clean app look */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  /* Style the "News" and "Sports" tags to look like App Category labels */
   .meta-data span {
     background: #f2f2f7;
-    color: #007aff; /* iOS Blue */
+    color: #007aff;
     padding: 6px 12px;
     border-radius: 12px;
     font-size: 13px;
@@ -305,11 +273,9 @@ mark {
     margin-top: 16px;
   }
 
-  /* The "Read More" becomes a CTA button */
   .read-more {
     display: block;
     text-align: center;
-    /* background: #f2f2f7; */
     margin: 0 20px 20px;
     padding: 12px;
     border-radius: 12px;
@@ -318,7 +284,6 @@ mark {
   }
 }
 
-/* iOS Safe Area Support (for iPhones with notches) */
 @supports (padding: env(safe-area-inset-top)) {
   main {
     padding-top: calc(20px + env(safe-area-inset-top));
@@ -326,24 +291,19 @@ mark {
   }
 }
 
-/* ==========================================================================
-   Fixed Bottom Navigation (iOS Style)
-   ========================================================================== */
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 84px; /* Standard iOS height including home indicator space */
+  height: 84px;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: env(
-    safe-area-inset-bottom
-  ); /* Essential for iPhone notches */
+  padding-bottom: env(safe-area-inset-bottom);
   border-top: 0.5px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -354,7 +314,7 @@ mark {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #8e8e93; /* iOS Unselected Grey */
+  color: #8e8e93;
   transition: color 0.2s ease;
   width: 25%;
 }
@@ -370,26 +330,20 @@ mark {
   font-family: "Google Sans", sans-serif;
 }
 
-/* Active State */
 .nav-item.active {
-  color: #007aff; /* iOS Signature Blue */
+  color: #007aff;
 }
 
-/* Desktop Hide: We only want this on mobile */
 @media (min-width: 769px) {
   .bottom-nav {
     display: none;
   }
 }
 
-/* Adjust Main padding so content isn't hidden behind the nav */
 main {
   padding-bottom: 100px;
 }
 
-/* ==========================================================================
-   Floating Apple Menu (Top-Right)
-   ========================================================================== */
 .apple-menu-container {
   position: fixed;
   top: 20px;
@@ -400,7 +354,6 @@ main {
   align-items: flex-end;
 }
 
-/* The Main Button */
 .fab-main {
   width: 50px;
   height: 50px;
@@ -419,7 +372,6 @@ main {
   justify-content: center;
 }
 
-/* Menu Items Container */
 .menu-items {
   margin-top: 12px;
   display: flex;
@@ -455,9 +407,8 @@ main {
   font-size: 16px;
 }
 
-/* Active/Open States */
 .apple-menu-container.open .fab-main {
-  transform: rotate(135deg); /* Turns Plus into an X */
+  transform: rotate(135deg);
   background: #fff;
 }
 
@@ -467,7 +418,6 @@ main {
   transform: translateY(0) scale(1);
 }
 
-/* Background Dim Overlay */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -484,53 +434,48 @@ main {
   visibility: visible;
 }
 
-/* Safe Area Adjustment for Notch */
 @supports (padding: env(safe-area-inset-top)) {
   .apple-menu-container {
     top: calc(20px + env(safe-area-inset-top));
   }
 }
 
-/* ==========================================================================
-   iOS Bottom Sheet (Drawer)
-   ========================================================================== */
 .bottom-sheet {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 92vh; /* Almost full height */
+  height: 92vh;
   background: #ffffff;
   z-index: 20000;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
-  transform: translateY(100%); /* Hidden by default */
+  transform: translateY(100%);
   transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1);
   display: flex;
   flex-direction: column;
-  touch-action: pan-y; /* Allows vertical dragging */
-  will-change: transform; /* Optimizes GPU performance for smooth movement */
+  touch-action: pan-y;
+  will-change: transform;
 }
 
-/* Hide scrollbar but allow scrolling inside the sheet */
 .sheet-content::-webkit-scrollbar {
   display: none;
 }
+
 .sheet-content {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* States */
 .bottom-sheet.half {
   transform: translateY(50%);
 }
+
 .bottom-sheet.full {
   transform: translateY(0%);
 }
 
-/* The Drag Handle */
 .sheet-handle {
   width: 40px;
   height: 5px;
@@ -558,7 +503,6 @@ main {
   margin: 20px 0;
 }
 
-/* Overlay Blur */
 .sheet-overlay {
   position: fixed;
   inset: 0;
@@ -576,24 +520,20 @@ main {
   visibility: visible;
 }
 
-/* ==========================================================================
-   Desktop "Quick Look" Modal (Apple Style)
-   ========================================================================== */
 @media (min-width: 769px) {
   .bottom-sheet {
     top: 50%;
     left: 50%;
     right: auto;
     bottom: auto;
-    width: 800px; /* Fixed width for better readability */
+    width: 800px;
     height: 85vh;
-    transform: translate(-50%, 100%) scale(0.9); /* Starts hidden below */
-    border-radius: 24px; /* Full rounded corners for desktop */
+    transform: translate(-50%, 100%) scale(0.9);
+    border-radius: 24px;
     opacity: 0;
     visibility: hidden;
   }
 
-  /* Desktop Active States */
   .bottom-sheet.half,
   .bottom-sheet.full {
     transform: translate(-50%, -50%) scale(1);
@@ -602,14 +542,13 @@ main {
   }
 
   .sheet-handle {
-    display: none; /* No dragging needed on desktop */
+    display: none;
   }
 
   .sheet-content {
-    padding: 60px 80px; /* More generous whitespace for desktop */
+    padding: 60px 80px;
   }
 
-  /* Close Button for Desktop (Optional addition) */
   .desktop-close {
     position: absolute;
     top: 20px;

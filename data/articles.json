@@ -1,0 +1,16 @@
+{
+  "ucl-2026": {
+    "category": "Champions League",
+    "title": "Road to Munich: Quarter-Final Preview",
+    "date": "March 24, 2026",
+    "image": "images/ucl-header.jpg",
+    "content": "<p>The giants of Europe converge this week. After a thrilling round of 16, the tactical landscape has shifted significantly...</p><h4>Key Tactical Battles</h4><p>Expect high-pressing lines and rapid transitions as the favorites look to secure an early lead.</p>"
+  },
+  "taifa-stars": {
+    "category": "National Team",
+    "title": "Taifa Stars: Preparing for AFCON Qualifiers",
+    "date": "March 23, 2026",
+    "image": "images/taifa-stars.jpg",
+    "content": "<p>The national team has entered camp in Dar es Salaam. Coach's focus remains on defensive solidity and clinical finishing.</p><ul><li>Injury updates: Samatta is fit.</li><li>New call-ups: Two youth prospects from Arusha.</li></ul>"
+  }
+}
