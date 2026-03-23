@@ -90,7 +90,7 @@ main {
   color: #555;
 }
 
-.grid-container .item .meta-data small i {
+.grid-container .item .meta-data a i {
   color: #555;
 }
 
