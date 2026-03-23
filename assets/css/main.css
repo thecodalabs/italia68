@@ -90,12 +90,16 @@ main {
   color: #555;
 }
 
+.grid-container .item .meta-data small i {
+  color: #555;
+}
+
 .grid-container .item h3 {
   padding: 5px 0 5px 0;
   text-transform: uppercase;
 }
 
-.grid-container .item a {
+.grid-container .item a.read-more {
   text-decoration: none;
   border: 1px solid #555;
   width: 120px;
@@ -108,7 +112,7 @@ main {
   color: #000;
 }
 
-.grid-container .item a:hover {
+.grid-container .item a.read-more:hover {
   background: #e0dfdf;
   border-color: #e0dfdf;
 }
