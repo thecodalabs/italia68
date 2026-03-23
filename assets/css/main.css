@@ -27,8 +27,9 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   color: #555;
+  font-weight: 400;
 }
 
 main {
@@ -65,11 +66,16 @@ main {
   border: 1px solid #bbbbbb;
   display: flex;
   flex-direction: column;
-  padding: 8px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.grid-container .item {
 }
 
 .grid-container .item img {
   width: 100%;
+  border-radius: 8px;
 }
 
 .item .meta-data {
