@@ -22,12 +22,16 @@
 }
 
 body {
-  background-color: var(--bg-color);
   font-family: var(--font-body);
   color: var(--text-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f7;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 80px 80px;
 }
 
 h1,
@@ -47,10 +51,20 @@ main {
 }
 
 #home > h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
   letter-spacing: -0.02em;
+}
+
+.stich-text {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  padding: 0 5px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 #home > h1 span {
@@ -187,7 +201,7 @@ mark {
 
 @media (max-width: 768px) {
   #home > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .grid-container {
@@ -421,8 +435,7 @@ main {
 .menu-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.1);
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
@@ -569,5 +582,66 @@ main {
   .desktop-close:hover {
     background: #e5e5ea;
     color: #1d1d1f;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0 1rem 0;
+}
+
+footer .footer-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  border-top: var(--text-muted) 1px solid;
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin: 4px 0;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.entry {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.entry-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.entry-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .entry-title {
+    font-size: 1.8rem;
+    padding-top: 10vh;
+  }
+
+  .entry-description {
+    font-size: 1rem;
+    padding: 0 10px;
   }
 }
