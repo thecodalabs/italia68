@@ -648,3 +648,17 @@ footer a {
     padding: 0 10px;
   }
 }
+
+#sheetText p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+#sheetText h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+#sheetText ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}

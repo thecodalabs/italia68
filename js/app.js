@@ -1,17 +1,13 @@
-// --- MENU LOGIC ---
 function toggleMenu() {
   const menu = document.getElementById("appleMenu");
   const overlay = document.getElementById("menuOverlay");
-
   menu.classList.toggle("open");
   overlay.classList.toggle("active");
-
   if (window.navigator.vibrate) {
     window.navigator.vibrate(10);
   }
 }
 
-// --- BOTTOM SHEET GESTURES & CONTROL ---
 let startY = 0;
 let currentY = 0;
 const sheet = document.getElementById("bottomSheet");
@@ -20,7 +16,6 @@ const overlay = document.getElementById("sheetOverlay");
 function openSheet(title, text, img) {
   document.getElementById("sheetTitle").innerText = title;
   document.getElementById("sheetImage").src = img;
-
   sheet.style.transition = "transform 0.5s cubic-bezier(0.32, 0.72, 0, 1)";
   sheet.classList.add("half");
   overlay.classList.add("active");
@@ -41,10 +36,8 @@ sheet.addEventListener(
   (e) => {
     currentY = e.touches[0].clientY;
     const deltaY = currentY - startY;
-
     if (sheet.querySelector(".sheet-content").scrollTop <= 0) {
       if (deltaY > 0 || sheet.classList.contains("half")) {
-        // Gesture logic can be expanded here for dragging
       }
     }
   },
@@ -54,9 +47,7 @@ sheet.addEventListener(
 sheet.addEventListener("touchend", (e) => {
   const endY = e.changedTouches[0].clientY;
   const distance = startY - endY;
-
   sheet.style.transition = "transform 0.5s cubic-bezier(0.32, 0.72, 0, 1)";
-
   if (distance > 100) {
     sheet.classList.remove("half");
     sheet.classList.add("full");
@@ -83,21 +74,18 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeSheet();
 });
 
-// --- DYNAMIC DATA LOADING (JSON) ---
-
-// 1. Fetch and render the entire grid automatically
 async function renderNewsGrid() {
   const grid = document.getElementById("newsGrid");
-  if (!grid) return; // Safety check
-
+  if (!grid) return;
   try {
     const response = await fetch("data/articles.json");
     if (!response.ok) throw new Error("Could not load articles.json");
-
     const articles = await response.json();
-    grid.innerHTML = ""; // Clear existing hardcoded items
+    grid.innerHTML = "";
 
-    Object.keys(articles).forEach((id) => {
+    const shuffledKeys = Object.keys(articles).sort(() => Math.random() - 0.5);
+
+    shuffledKeys.forEach((id) => {
       const item = articles[id];
       const cardHTML = `
         <div class="item">
@@ -124,22 +112,18 @@ async function renderNewsGrid() {
   }
 }
 
-// 2. Load specific article details into the sheet
 async function loadArticle(articleId) {
   try {
-    const response = await fetch("../data/articles.json");
+    const response = await fetch("data/articles.json");
     if (!response.ok) throw new Error("Could not load news database.");
-
     const allArticles = await response.json();
     const article = allArticles[articleId];
-
     if (article) {
       document.getElementById("sheetCategory").innerText = article.category;
       document.getElementById("sheetTitle").innerText = article.title;
       document.getElementById("sheetMeta").innerText = article.date;
       document.getElementById("sheetImage").src = article.image;
       document.getElementById("sheetText").innerHTML = article.content;
-
       openAppleSheet();
     }
   } catch (error) {
@@ -157,12 +141,10 @@ function openAppleSheet() {
   document.body.style.overflow = "hidden";
 }
 
-// --- INITIALIZE ---
 window.addEventListener("DOMContentLoaded", () => {
   renderNewsGrid();
 });
 
-// Simple like handler for the dynamic buttons
 function handleLike(btn) {
   const icon = btn.querySelector("i");
   icon.classList.toggle("fa-regular");

@@ -1,65 +1,182 @@
 {
-  "italia68-launch": {
-    "category": "News",
-    "title": "Italia68 News Website Launches Today",
-    "date": "23rd March, 2026",
-    "image": "logo/italia68.png",
-    "likes": "2.3k",
-    "excerpt": "Italia68 is live today as your new destination for the latest sports headlines and football breakdowns.",
-    "content": "<p>The platform was launched by the Italian Class of 2026, led by Ramadhan Mahene, Princepius Petro, and Brian Duma, and developed by TheCodaLabs.</p><p>Our mission is to provide high-quality coverage of both local and global events with a premium aesthetic.</p>"
-  },
-  "leicester-fa-cup": {
-    "category": "Sports",
-    "title": "Leicester City Wins FA Cup in Dramatic Final",
-    "date": "9th March, 2026",
-    "image": "news/_118522348_leicester.jpg.webp",
-    "likes": "5.7k",
-    "excerpt": "Leicester City completed a stunning redemption arc at Wembley, clinching their second FA Cup.",
-    "content": "<p>After Marcus Rashford canceled out Leicester's lead, Jamie Vardy struck a dramatic extra-time winner. Just a year after relegation, the Foxes’ historic triumph cements their return to football's elite.</p>"
-  },
-  "league-attendance": {
-    "category": "Football",
-    "title": "League Title Showdown Sets Attendance Record",
-    "date": "23rd March, 2026",
-    "image": "news/100kviewers.jpg",
-    "likes": "3.2k",
-    "excerpt": "Last week’s title clash shattered attendance records as young fans flooded stadiums globally.",
-    "content": "<p>The match hashtag dominated social media trends. This massive turnout and viral buzz highlight football's cultural grip, proving the sport's global appeal is reaching unprecedented heights.</p>"
-  },
-  "quantum-breakthrough": {
-    "category": "Science",
-    "title": "Breakthrough in Quantum Computing Achieved",
-    "date": "23rd March, 2026",
-    "image": "images/home-bg.jpg",
-    "likes": "3.7k",
-    "excerpt": "Scientists at MIT have achieved a major breakthrough in quantum computing stability.",
-    "content": "<p>Demonstrating error-corrected qubits that maintain stability for over 100 microseconds. This advancement brings practical quantum computers one step closer to reality, potentially revolutionizing fields from cryptography to drug discovery.</p>"
-  },
-  "apple-ar-glasses": {
+  "tech-1": {
     "category": "Tech",
-    "title": "Apple Unveils Next-Generation AR Glasses",
-    "date": "22nd March, 2026",
-    "image": "images/home-bg.jpg",
-    "likes": "9.5k",
-    "excerpt": "Apple has officially unveiled its highly anticipated AR glasses during today's keynote.",
-    "content": "<p>The device features advanced spatial audio, seamless iPhone integration, and an all-day battery life. With a starting price of $599, the glasses promise to revolutionize how we interact with digital content.</p>"
+    "title": "The Quantum AI Revolution: Mapping the 2026 Landscape",
+    "date": "24 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=600",
+    "likes": "4.2k",
+    "excerpt": "Researchers have finally bridged the gap between quantum stability and practical AI.",
+    "content": "<p>In a landmark announcement, the Global Quantum Consortium revealed 'Perfect Decoherence Shielding.' This allows qubits to remain stable for hours, solving the biggest hurdle in computing history.</p><h3>Why It Matters</h3><p>For users, this means AI models no longer require massive server farms. A local quantum chip could handle trillion-parameter calculations in your pocket.</p><ul><li>Real-time translation without latency</li><li>Instantaneous drug discovery</li><li>Personalized climate modeling for Arusha farmers</li></ul>"
   },
-  "kpop-spotify-record": {
-    "category": "Music",
-    "title": "New K-Pop Supergroup Debut Breaks Records",
-    "date": "22nd March, 2026",
-    "image": "images/home-bg.jpg",
-    "likes": "9.2k",
-    "excerpt": "The first track from the newly formed global K-pop group shattered daily stream records.",
-    "content": "<p>Sparking a fandom frenzy across Instagram Reels and YouTube Shorts, this debut marks a new era for global pop music collaborations.</p>"
+  "science-1": {
+    "category": "Science",
+    "title": "Mars Colony Alpha: Life Beyond Earth is Real",
+    "date": "24 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&q=80&w=600",
+    "likes": "8.9k",
+    "excerpt": "A self-sustaining modular habitat has successfully supported 50 inhabitants on Mars.",
+    "content": "<p>The dream of becoming multi-planetary is now a fact. Colony Alpha, in the Jezero Crater, reported its first harvest of Martian-grown potatoes using a closed-loop hydroponic system that recycles 98% of its water.</p><p>The crew of engineers and biologists spent six months testing 3D-printed regolith shelters. These protect against intense radiation and extreme Martian temperatures. Plans for Colony Beta are already underway for 2027.</p>"
   },
-  "verstappen-f1": {
+  "sport-1": {
     "category": "Sports",
-    "title": "Verstappen Dominates Australian Grand Prix",
-    "date": "18th March, 2026",
-    "image": "images/home-bg.jpg",
-    "likes": "6.9k",
-    "excerpt": "Max Verstappen secured his third consecutive victory at the Australian Grand Prix.",
-    "content": "<p>The Red Bull driver overcame early tire issues to finish ahead of Charles Leclerc and Lewis Hamilton. Mercedes showed promising pace with strategic pit stops.</p>"
+    "title": "Champions League Final: Tactical Masterclass",
+    "date": "23 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=600",
+    "likes": "12k",
+    "excerpt": "The heavyweights of European football delivered a final for the history books in Munich.",
+    "content": "<p>The 2026 Final was a collision of philosophies. A stunning goal in the 12th minute set the tone, but a tactical substitution in the second half changed everything. A 118th-minute bicycle kick eventually decided the trophy.</p><p>Post-match stats showed a record 94% pass accuracy. For the winners, this is their third title in five years, cementing a true dynasty.</p>"
+  },
+  "life-1": {
+    "category": "Life",
+    "title": "Arusha Named #1 Digital Nomad Destination",
+    "date": "23 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&q=80&w=600",
+    "likes": "5.6k",
+    "excerpt": "Tanzania’s safari capital is now a global hub for remote tech talent.",
+    "content": "<p>With the expansion of high-speed satellite internet and new co-working spaces, Arusha has topped the charts for digital nomads. The mix of adventure and infrastructure is drawing developers from Silicon Valley to Tokyo.</p><p>Local businesses are pivoting to support this influx, with 'Workation' packages becoming the new standard for the Tanzanian tourism sector.</p>"
+  },
+  "tech-2": {
+    "category": "Tech",
+    "title": "SIT WiKi: Science Goes Viral in East Africa",
+    "date": "22 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600",
+    "likes": "3.1k",
+    "excerpt": "A new science ecosystem is using short-form video hooks to educate youth.",
+    "content": "<p>SIT WiKi (Science In Tanzania) has officially launched its execution roadmap. By combining deep scientific knowledge with the viral nature of short-form video, the platform aims to inspire the next generation of African engineers.</p><p>The project focuses on accessibility, ensuring that even students with low-bandwidth connections can access high-quality STEM content.</p>"
+  },
+  "biz-1": {
+    "category": "Business",
+    "title": "The 4-Day Work Week Becomes Law",
+    "date": "22 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=600",
+    "likes": "15k",
+    "excerpt": "Major economies are shifting to a 32-hour work week to boost productivity.",
+    "content": "<p>Following successful three-year trials, governments are mandating a 4-day work week. Data shows that employee burnout has dropped by 60% while corporate profits remained stable or increased due to higher focus levels.</p><p>Critics warn of service industry challenges, but tech and creative firms are already reporting a surge in high-quality job applications.</p>"
+  },
+  "health-1": {
+    "category": "Health",
+    "title": "Breakthrough in Personalized Gene Therapy",
+    "date": "21 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600",
+    "likes": "7.2k",
+    "excerpt": "New CRISPR-based treatments can now target rare genetic disorders in real-time.",
+    "content": "<p>Medical science has taken a giant leap with 'Live-Edit' technology. Doctors can now correct genetic sequences during a single outpatient procedure. This effectively cures several previously terminal conditions.</p><p>While the cost remains high, insurance providers are beginning to cover these treatments as they prevent lifelong medical expenses.</p>"
+  },
+  "nature-1": {
+    "category": "Nature",
+    "title": "Ocean Cleanup: 50% of Pacific Plastic Removed",
+    "date": "21 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&q=80&w=600",
+    "likes": "22k",
+    "excerpt": "The Great Pacific Garbage Patch is shrinking faster than predicted.",
+    "content": "<p>Autonomous sea-drones have successfully collected over 500,000 tons of plastic this quarter. The recycled material is being converted into affordable housing bricks for coastal communities.</p><p>Marine biologists report that whale migration patterns are returning to normal for the first time in decades due to the cleaner waters.</p>"
+  },
+  "edu-1": {
+    "category": "Education",
+    "title": "AI Tutors Outperform Human Teachers in STEM",
+    "date": "20 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=600",
+    "likes": "4.8k",
+    "excerpt": "A study shows students learn complex math 3x faster with adaptive AI coaches.",
+    "content": "<p>Personalized learning has reached a tipping point. AI tutors can now identify a student's 'knowledge gaps' instantly and adjust the curriculum. This allows students to master Physics and Calculus at their own pace.</p><p>Human teachers are now shifting into mentorship roles, focusing on emotional intelligence and ethics rather than just rote memorization.</p>"
+  },
+  "auto-1": {
+    "category": "Auto",
+    "title": "Hydrogen Cars: The End of the EV Battery?",
+    "date": "20 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=600",
+    "likes": "9.1k",
+    "excerpt": "New hydrogen fuel cells provide 2,000km range with zero emissions.",
+    "content": "<p>While Lithium batteries dominated the last decade, Hydrogen is making a comeback. New extraction methods have made 'Green Hydrogen' cheaper than petrol. Charging takes 3 minutes, making it ideal for long-haul transport across Africa.</p><p>Major manufacturers have announced they will cease all internal combustion engine production by the end of this year.</p>"
+  },
+  "tech-3": {
+    "category": "Tech",
+    "title": "Web 4.0 and Total Privacy",
+    "date": "19 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600",
+    "likes": "6k",
+    "excerpt": "The decentralized web is finally removing middle-men from our data.",
+    "content": "<p>Web 4.0 focuses on 'Self-Sovereign Identity.' Users now own their data on a local ledger, and companies must pay users to access specific insights. It's the end of the invasive ad-tracking era.</p>"
+  },
+  "food-1": {
+    "category": "Food",
+    "title": "Vertical Farming in Skyscrapers",
+    "date": "19 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=600",
+    "likes": "3.3k",
+    "excerpt": "Cities are now growing 40% of their own food indoors.",
+    "content": "<p>By utilizing unused office space, vertical farms are producing pesticide-free vegetables year-round. This reduces transport costs and ensures food security during climate fluctuations.</p>"
+  },
+  "space-1": {
+    "category": "Space",
+    "title": "JWST Finds Signs of Life on K2-18b",
+    "date": "18 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&q=80&w=600",
+    "likes": "31k",
+    "excerpt": "Atmospheric analysis reveals chemical markers only produced by living organisms.",
+    "content": "<p>The James Webb Space Telescope has detected Dimethyl Sulfide in the atmosphere of a distant 'Hycean' world. On Earth, this is only produced by life. The scientific community is currently debating the implications.</p>"
+  },
+  "music-1": {
+    "category": "Music",
+    "title": "Hologram World Tour Breaks Records",
+    "date": "18 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1514525253361-bee8718a74a2?auto=format&fit=crop&q=80&w=600",
+    "likes": "14k",
+    "excerpt": "Digital avatars of legendary artists are selling out stadiums globally.",
+    "content": "<p>Using advanced 3D projection and spatial audio, fans can experience 'live' performances from artists who passed decades ago. The tech is so realistic that many fans claim they forgot the artist wasn't actually there.</p>"
+  },
+  "biz-2": {
+    "category": "Business",
+    "title": "Bitcoin Hits New All-Time High",
+    "date": "17 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=600",
+    "likes": "8.4k",
+    "excerpt": "Institutional adoption drives the premier cryptocurrency to $250k.",
+    "content": "<p>As global banks integrate blockchain technology into their core systems, the scarcity of Bitcoin has driven the price to record levels. It is now widely seen as 'Digital Gold' for national reserves.</p>"
+  },
+  "life-2": {
+    "category": "Life",
+    "title": "The Rise of Minimalist Architecture",
+    "date": "17 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=600",
+    "likes": "4.1k",
+    "excerpt": "How 'Glassmorphism' moved from UI design to real-world luxury homes.",
+    "content": "<p>Architects are using smart-glass and monochromatic palettes to create homes that disappear into the landscape. This 'Apple-style' design prioritizes mental clarity and natural light over ornamentation.</p>"
+  },
+  "tech-4": {
+    "category": "Tech",
+    "title": "Haptic Suits for Virtual Work",
+    "date": "16 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1592477342532-afaa2d69e2d4?auto=format&fit=crop&q=80&w=600",
+    "likes": "2.9k",
+    "excerpt": "Feeling a handshake in the Metaverse is now possible.",
+    "content": "<p>New ultrasonic suits allow users to feel physical sensations in VR. This is being used for high-precision remote surgery and industrial engineering training where tactile feedback is critical.</p>"
+  },
+  "sport-2": {
+    "category": "Sports",
+    "title": "E-Sports to Join the Olympics",
+    "date": "16 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=600",
+    "likes": "18k",
+    "excerpt": "The IOC officially recognizes competitive gaming for the 2028 games.",
+    "content": "<p>After years of debate, E-sports will debut as a medal event. Training facilities are being built alongside traditional athletics to support this new generation of Olympic athletes.</p>"
+  },
+  "science-2": {
+    "category": "Science",
+    "title": "Synthetic Photosynthesis Success",
+    "date": "15 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&q=80&w=600",
+    "likes": "11k",
+    "excerpt": "Man-made leaves are now 10x more efficient at capturing CO2 than trees.",
+    "content": "<p>Scientists have developed a liquid-cell 'leaf' that can be sprayed on buildings to scrub carbon from the air. This could be a primary weapon against global warming in dense urban environments.</p>"
+  },
+  "life-3": {
+    "category": "Life",
+    "title": "The Return of the Library",
+    "date": "15 Mar 2026",
+    "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=600",
+    "likes": "6.7k",
+    "excerpt": "Physical books see a massive resurgence as people battle 'Digital Fatigue'.",
+    "content": "<p>Despite the rise of e-readers, Gen Z is flocking to physical libraries. The desire for 'unplugged' spaces has made local libraries the most popular social hubs of 2026.</p>"
   }
 }
