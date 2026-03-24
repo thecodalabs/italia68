@@ -1,16 +1,65 @@
 {
-  "ucl-2026": {
-    "category": "Champions League",
-    "title": "Road to Munich: Quarter-Final Preview",
-    "date": "March 24, 2026",
-    "image": "images/ucl-header.jpg",
-    "content": "<p>The giants of Europe converge this week. After a thrilling round of 16, the tactical landscape has shifted significantly...</p><h4>Key Tactical Battles</h4><p>Expect high-pressing lines and rapid transitions as the favorites look to secure an early lead.</p>"
+  "italia68-launch": {
+    "category": "News",
+    "title": "Italia68 News Website Launches Today",
+    "date": "23rd March, 2026",
+    "image": "logo/italia68.png",
+    "likes": "2.3k",
+    "excerpt": "Italia68 is live today as your new destination for the latest sports headlines and football breakdowns.",
+    "content": "<p>The platform was launched by the Italian Class of 2026, led by Ramadhan Mahene, Princepius Petro, and Brian Duma, and developed by TheCodaLabs.</p><p>Our mission is to provide high-quality coverage of both local and global events with a premium aesthetic.</p>"
   },
-  "taifa-stars": {
-    "category": "National Team",
-    "title": "Taifa Stars: Preparing for AFCON Qualifiers",
-    "date": "March 23, 2026",
-    "image": "images/taifa-stars.jpg",
-    "content": "<p>The national team has entered camp in Dar es Salaam. Coach's focus remains on defensive solidity and clinical finishing.</p><ul><li>Injury updates: Samatta is fit.</li><li>New call-ups: Two youth prospects from Arusha.</li></ul>"
+  "leicester-fa-cup": {
+    "category": "Sports",
+    "title": "Leicester City Wins FA Cup in Dramatic Final",
+    "date": "9th March, 2026",
+    "image": "news/_118522348_leicester.jpg.webp",
+    "likes": "5.7k",
+    "excerpt": "Leicester City completed a stunning redemption arc at Wembley, clinching their second FA Cup.",
+    "content": "<p>After Marcus Rashford canceled out Leicester's lead, Jamie Vardy struck a dramatic extra-time winner. Just a year after relegation, the Foxes’ historic triumph cements their return to football's elite.</p>"
+  },
+  "league-attendance": {
+    "category": "Football",
+    "title": "League Title Showdown Sets Attendance Record",
+    "date": "23rd March, 2026",
+    "image": "news/100kviewers.jpg",
+    "likes": "3.2k",
+    "excerpt": "Last week’s title clash shattered attendance records as young fans flooded stadiums globally.",
+    "content": "<p>The match hashtag dominated social media trends. This massive turnout and viral buzz highlight football's cultural grip, proving the sport's global appeal is reaching unprecedented heights.</p>"
+  },
+  "quantum-breakthrough": {
+    "category": "Science",
+    "title": "Breakthrough in Quantum Computing Achieved",
+    "date": "23rd March, 2026",
+    "image": "images/home-bg.jpg",
+    "likes": "3.7k",
+    "excerpt": "Scientists at MIT have achieved a major breakthrough in quantum computing stability.",
+    "content": "<p>Demonstrating error-corrected qubits that maintain stability for over 100 microseconds. This advancement brings practical quantum computers one step closer to reality, potentially revolutionizing fields from cryptography to drug discovery.</p>"
+  },
+  "apple-ar-glasses": {
+    "category": "Tech",
+    "title": "Apple Unveils Next-Generation AR Glasses",
+    "date": "22nd March, 2026",
+    "image": "images/home-bg.jpg",
+    "likes": "9.5k",
+    "excerpt": "Apple has officially unveiled its highly anticipated AR glasses during today's keynote.",
+    "content": "<p>The device features advanced spatial audio, seamless iPhone integration, and an all-day battery life. With a starting price of $599, the glasses promise to revolutionize how we interact with digital content.</p>"
+  },
+  "kpop-spotify-record": {
+    "category": "Music",
+    "title": "New K-Pop Supergroup Debut Breaks Records",
+    "date": "22nd March, 2026",
+    "image": "images/home-bg.jpg",
+    "likes": "9.2k",
+    "excerpt": "The first track from the newly formed global K-pop group shattered daily stream records.",
+    "content": "<p>Sparking a fandom frenzy across Instagram Reels and YouTube Shorts, this debut marks a new era for global pop music collaborations.</p>"
+  },
+  "verstappen-f1": {
+    "category": "Sports",
+    "title": "Verstappen Dominates Australian Grand Prix",
+    "date": "18th March, 2026",
+    "image": "images/home-bg.jpg",
+    "likes": "6.9k",
+    "excerpt": "Max Verstappen secured his third consecutive victory at the Australian Grand Prix.",
+    "content": "<p>The Red Bull driver overcame early tire issues to finish ahead of Charles Leclerc and Lewis Hamilton. Mercedes showed promising pace with strategic pit stops.</p>"
   }
 }

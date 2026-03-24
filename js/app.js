@@ -1,3 +1,4 @@
+// --- MENU LOGIC ---
 function toggleMenu() {
   const menu = document.getElementById("appleMenu");
   const overlay = document.getElementById("menuOverlay");
@@ -10,6 +11,7 @@ function toggleMenu() {
   }
 }
 
+// --- BOTTOM SHEET GESTURES & CONTROL ---
 let startY = 0;
 let currentY = 0;
 const sheet = document.getElementById("bottomSheet");
@@ -42,6 +44,7 @@ sheet.addEventListener(
 
     if (sheet.querySelector(".sheet-content").scrollTop <= 0) {
       if (deltaY > 0 || sheet.classList.contains("half")) {
+        // Gesture logic can be expanded here for dragging
       }
     }
   },
@@ -77,14 +80,54 @@ function closeSheet() {
 }
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    closeSheet();
-  }
+  if (e.key === "Escape") closeSheet();
 });
 
+// --- DYNAMIC DATA LOADING (JSON) ---
+
+// 1. Fetch and render the entire grid automatically
+async function renderNewsGrid() {
+  const grid = document.getElementById("newsGrid");
+  if (!grid) return; // Safety check
+
+  try {
+    const response = await fetch("../data/articles.json");
+    if (!response.ok) throw new Error("Could not load articles.json");
+
+    const articles = await response.json();
+    grid.innerHTML = ""; // Clear existing hardcoded items
+
+    Object.keys(articles).forEach((id) => {
+      const item = articles[id];
+      const cardHTML = `
+        <div class="item">
+          <img src="${item.image}" alt="${item.title}" loading="lazy" />
+          <div class="meta-data">
+            <small>${item.date}</small>
+            <a href="javascript:void(0)" class="like-btn" onclick="handleLike(this)">
+              <i class="fa-regular fa-heart"></i>
+              <span class="like-count">${item.likes || "0"}</span>
+            </a>
+            <span>${item.category}</span>
+          </div>
+          <h3>${item.title}</h3>
+          <p>${item.excerpt || item.content.replace(/<[^>]*>/g, "").substring(0, 120) + "..."}</p>
+          <button class="read-more" onclick="loadArticle('${id}')">
+            Read More <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      `;
+      grid.insertAdjacentHTML("beforeend", cardHTML);
+    });
+  } catch (error) {
+    console.error("Grid automation error:", error);
+  }
+}
+
+// 2. Load specific article details into the sheet
 async function loadArticle(articleId) {
   try {
-    const response = await fetch("data/articles.json");
+    const response = await fetch("../data/articles.json");
     if (!response.ok) throw new Error("Could not load news database.");
 
     const allArticles = await response.json();
@@ -101,20 +144,28 @@ async function loadArticle(articleId) {
     }
   } catch (error) {
     console.error("Error fetching article:", error);
-    alert("Check your internet connection to read the full story.");
   }
 }
 
 function openAppleSheet() {
-  const sheet = document.getElementById("bottomSheet");
-  const overlay = document.getElementById("sheetOverlay");
-
   if (window.innerWidth <= 768) {
     sheet.classList.add("half");
   } else {
     sheet.classList.add("full");
   }
-
   overlay.classList.add("active");
   document.body.style.overflow = "hidden";
+}
+
+// --- INITIALIZE ---
+window.addEventListener("DOMContentLoaded", () => {
+  renderNewsGrid();
+});
+
+// Simple like handler for the dynamic buttons
+function handleLike(btn) {
+  const icon = btn.querySelector("i");
+  icon.classList.toggle("fa-regular");
+  icon.classList.toggle("fa-solid");
+  icon.style.color = icon.classList.contains("fa-solid") ? "#ff3b30" : "";
 }
