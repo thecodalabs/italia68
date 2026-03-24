@@ -65,7 +65,6 @@ sheet.addEventListener("touchend", (e) => {
 });
 
 function closeSheet() {
-  // Force stop the voice when the user leaves the article
   if (window.speechSynthesis) {
     window.speechSynthesis.cancel();
   }
