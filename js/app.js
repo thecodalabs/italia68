@@ -65,9 +65,18 @@ sheet.addEventListener("touchend", (e) => {
 });
 
 function closeSheet() {
+  // Force stop the voice when the user leaves the article
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+
   sheet.classList.remove("half", "full");
   overlay.classList.remove("active");
   document.body.style.overflow = "";
+
+  // Reset the button icon manually just in case
+  const voiceIcon = document.querySelector("#voiceBtn i");
+  if (voiceIcon) voiceIcon.className = "fa-solid fa-volume-high";
 }
 
 document.addEventListener("keydown", (e) => {
@@ -150,4 +159,49 @@ function handleLike(btn) {
   icon.classList.toggle("fa-regular");
   icon.classList.toggle("fa-solid");
   icon.style.color = icon.classList.contains("fa-solid") ? "#ff3b30" : "";
+}
+
+function toggleSpeech() {
+  const btn = document.getElementById("voiceBtn");
+  const icon = btn.querySelector("i");
+
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    resetVoiceUI();
+    return;
+  }
+
+  const title = document.getElementById("sheetTitle").innerText;
+  const body = document.getElementById("sheetText").innerText;
+  const utterance = new SpeechSynthesisUtterance(`${title}. ${body}`);
+
+  btn.classList.add("is-speaking");
+  icon.className = "fa-solid fa-stop";
+
+  utterance.onend = () => resetVoiceUI();
+  utterance.onerror = () => resetVoiceUI();
+
+  window.speechSynthesis.speak(utterance);
+}
+
+function resetVoiceUI() {
+  const btn = document.getElementById("voiceBtn");
+  const icon = btn.querySelector("i");
+
+  if (btn) {
+    btn.classList.remove("is-speaking");
+    icon.className = "fa-solid fa-volume-high";
+  }
+}
+
+function closeSheet() {
+  window.speechSynthesis.cancel();
+  resetVoiceUI();
+
+  const sheet = document.getElementById("bottomSheet");
+  const overlay = document.getElementById("sheetOverlay");
+
+  sheet.classList.remove("half", "full");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
 }

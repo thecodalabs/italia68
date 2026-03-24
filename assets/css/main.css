@@ -662,3 +662,50 @@ footer a {
   padding-left: 20px;
   margin-bottom: 15px;
 }
+
+.voice-btn {
+  background: #f2f2f7;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #007aff;
+}
+
+.voice-btn:active {
+  transform: scale(0.9);
+}
+
+/* Default state (White background, Blue icon) */
+.voice-btn {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for depth */
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #007aff; /* Apple Blue */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Speaking state (Red background, White icon) */
+.voice-btn.is-speaking {
+  background: #ff3b30 !important; /* Apple Red */
+  color: #ffffff !important; /* White icon */
+  border-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 59, 48, 0.3);
+}
+
+.voice-btn:active {
+  transform: scale(0.9);
+}
