@@ -91,7 +91,7 @@ async function renderNewsGrid() {
   if (!grid) return; // Safety check
 
   try {
-    const response = await fetch("../data/articles.json");
+    const response = await fetch("./data/articles.json");
     if (!response.ok) throw new Error("Could not load articles.json");
 
     const articles = await response.json();
